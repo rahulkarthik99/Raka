@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Preview</title>
+    <style>
+        body { font-family: sans-serif; }
+        .container { max-width: 600px; margin: 2rem auto; padding: 1rem; }
+        .form-group { margin-bottom: 1rem; }
+        label { display: block; margin-bottom: 0.5rem; }
+        input, select { width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 0.75rem 1.5rem; background-color: #007bff; color: white; border: none; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Content Generator</h1>
+        <form>
+            <div class="form-group">
+                <label for="topic">Topic</label>
+                <input type="text" id="topic" placeholder="e.g., 'Benefits of AI in marketing'">
+            </div>
+            <div class="form-group">
+                <label for="tone">Tone</label>
+                <select id="tone">
+                    <option value="friendly">Friendly</option>
+                    <option value="professional">Professional</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="count">Number of Posts</label>
+                <input type="number" id="count" value="7">
+            </div>
+            <button type="submit">Generate Batch</button>
+        </form>
+    </div>
+</body>
+</html>

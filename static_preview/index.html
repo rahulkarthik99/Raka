@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Preview</title>
+    <style>
+        body { font-family: sans-serif; }
+        .container { max-width: 1200px; margin: auto; padding: 1rem; }
+        .filters button { margin-right: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Post Queue</h1>
+        <div class="filters">
+            <button>All</button>
+            <button>Draft</button>
+            <button>Scheduled</button>
+            <button>Posted</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Topic</th>
+                    <th>Status</th>
+                    <th>Scheduled At</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Row -->
+                <tr>
+                    <td>Benefits of AI in marketing</td>
+                    <td>draft</td>
+                    <td>-</td>
+                    <td><button>Edit</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

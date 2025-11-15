@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+		<style>
+			/* Fallback Loader Styles */
+			#svelte-loader {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(135deg, #a8e6cf, #d8a7e2);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				z-index: 9999;
+				transition: opacity 0.5s ease;
+			}
+
+			.spinner {
+				width: 50px;
+				height: 50px;
+				border: 5px solid rgba(255, 255, 255, 0.3);
+				border-radius: 50%;
+				border-top-color: #ffffff;
+				animation: spin 1s ease-in-out infinite;
+			}
+
+			@keyframes spin {
+				to {
+					transform: rotate(360deg);
+				}
+			}
+
+			/* Hide the loader once SvelteKit is ready */
+			body[data-sveltekit-preload-data="hover"] #svelte-loader {
+				opacity: 0;
+				pointer-events: none; /* Make it unclickable */
+			}
+		</style>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div id="svelte-loader">
+			<div class="spinner"></div>
+		</div>
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

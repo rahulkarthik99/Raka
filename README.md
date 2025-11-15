@@ -1,19 +1,19 @@
-# 💬 Chatbot template
+# Daily Dose of Calm
 
-A simple Streamlit app that shows how to build a chatbot using OpenAI's GPT-3.5.
+This is a SvelteKit project created locally without the use of external templates.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-template.streamlit.app/)
+## Setup
 
-### How to run it on your own machine
+To get started, install the dependencies:
 
-1. Install the requirements
+```bash
+npm install
+```
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## Running the App
 
-2. Run the app
+To run the app in development mode, run the following command:
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+```bash
+npm run dev
+```
